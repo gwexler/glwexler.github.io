@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>George Wexler | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Designer | 3D Modeler | Graphic Artist |
+Multimedia Student">
+  <meta name="keywords" content="george wexler, georgewexler, george wexler fremont, george wexler california, george wexler united states, glw, george lewis wexler">
+  <meta name="author" content="George Wexler">
+  <link rel="shortcut icon" href="images/favicon-01.png">
+  <link href="css/styles1.css" rel="stylesheet" type="text/css">
+
+  <style>
+    section {
+    	width: 100%;
+    	display: table;
+    	margin: 2%;
+    	background-color: rgba(49,107,179,0.84);
+    	height: 15vh;
+    	padding-bottom: 25px;
+    }
+    
+    .content {
+    	display: table-cell;
+    	vertical-align: middle;
+    	padding-left: 10%;
+    	padding-right: 10%;
+    	padding-top: 10%;
+    	padding-bottom: 5%;
+    	font-size: 2em;
+    }  
+    
+    .circle-shape-example { 
+      font-family:'Cantora One', sans-serif; 
+      margin: 2rem; 
+    }
+    .circle-shape-example p { 
+      line-height: 1.8; 
+    }
+    .circle-shape-example .curve {
+    	width: 3%;
+    	height: auto;
+    	min-width: 150px;
+    	float: left;
+    	margin-right: 2rem;
+    	border-radius: 50%;
+    	-webkit-shape-outside: circle();
+    	shape-outside: circle();
+    	border: 10px outset rgba(49,107,179,1.00);
+    }
+    
+    
+    .color-list {
+    	display: flex;
+    	
+    	flex-direction: column;
+    	height: 20vh;
+    }
+    
+    .color {
+     
+      display: flex;
+      flex-direction: column;
+      
+     
+      flex: 1 0 2em;  
+      box-shadow: 0 0 30px #424242;
+      
+      
+      overflow: hidden;
+      padding: 1em;
+      color: white;
+      transition: flex-basis 500ms ease-in-out;
+    }
+    
+    .color:hover {
+      
+      flex-basis: 20em;
+    }
+    
+    .color:hover .details {
+      opacity: 1;
+    }
+    
+    .name {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    
+    .details {
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    	opacity: 0;
+    	transition: opacity 500ms ease-in-out;
+    	height: 5em;
+    }
+    
+    .details li {
+    	font-size: 1em;
+    	line-height: 0.5em;
+    }
+    
+    @media (min-width: 600px) {
+      .color-list {
+       
+        flex-direction: row;
+      }
+      
+      .color {
+       
+        flex-shrink: 1;
+      }
+    }
+    .snow {
+    	height: 100%;
+    	position: absolute;
+    	width: 100%;
+    	
+    }
+  </style>
+
+</head>
+<canvas id="snow" class="snow"></canvas>
+
+<body>
+
+  <div class="container">
+
+
+    <!--top bar -->
+    <div>
+
+      <span class="right">
+                    <a href="https://codepen.io/glwexler/">
+<img class="oyy" border="0" alt="Codepen" src="https://i.imgsafe.org/77d6835a4c.png" width="15%">
+</a>
+<a href="mailto:glw1776@gmail.com">
+<img class="oyy" border="0" alt="Gmail" src="images/gmail-icon.png" width="15%">
+</a>
+<a href="https://twitter.com/glwexler">
+<img class="oyy" border="0" alt="Twitter" src="images/Twitterbird.png" width="15%">
+</a>
+                   
+                        
+                   
+    </span>
+
+
+    </div>
+    <header>
+      <h1>George Wexler</h1>
+      <h2> Web Designer | 3D Modeler | Graphic Artist<br>Multimedia Student</h2>
+      <ul class="topnav" id="myTopnav">
+        <li><a class="nav-icon" href="index.html">Home</a></li>
+         <li><a class="nav-icon"  href="about.html">About</a></li>
+        <li><a class="nav-icon" href="GW_Resume.pdf">Resume</a></li>
+        <li><a class="nav-icon" href="gallery.html">Gallery</a></li>
+        <li><a class="nav-icon" id="current" href="contact.html">Contact</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" style="font-size:2em;" onclick="myFunction()">…</a>
+        </li>
+
+      </ul>
+
+
+    </header>
+    <section>
+      <div class="content">
+        <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <img src="images/profilepic.png" alt="profile pic" class="curve">
+          <h1>Contact Me!</h1>
+
+          <div>Feel free to contact me or check out my work using the links below!
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="https://i.imgsafe.org/77d6835a4c.png" alt="profile pic" class="curve">
+    <h1>Codepen</h1>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="images/gmail-icon.png" alt="profile pic" class="curve">
+    <h1>Gmail</h1>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="images/Twitterbird.png" alt="profile pic" class="curve">
+    <h1>Twitter</h1>
+    </section>
+        
+        
+
+
+     
+
+
+    <script>
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += " responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+    </script>
+
+
+    <footer>
+
+      <br clear="all">
+      <div class="footer" style="font-size: 2em; color: #62B5C6; text-align: center; width: 100%; padding-top: 20vh; left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;">George Wexler 2016.</div>
+
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  <script>
+    // JavaScript
+    window.sr = ScrollReveal();
+    sr.reveal('.circle-shape-example');
+  </script>
+  <script>
+    var canvas = document.getElementById('snow'),
+        ctx = canvas.getContext('2d'),
+        width = ctx.canvas.width = document.body.offsetWidth,
+        height = ctx.canvas.height = document.body.offsetHeight,
+        animFrame = window.requestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.msRequestAnimationFrame,
+        snowflakes = [];
+    
+    window.onresize = function() {
+      width = ctx.canvas.width = document.body.offsetWidth,
+        height = ctx.canvas.height = document.body.offsetHeight;
+    }
+    
+    function update() {
+      for (var i = 0; i < snowflakes.length; i++) {
+        snowflakes[i].update();
+      }
+    }
+    
+    function Snow() {
+      this.x = random(0, width);
+      this.y = random(-height, 0);
+      this.radius = random(0.5, 7.0);
+      this.speed = random(1,7);
+      this.wind = random(.2, .4);
+    }
+    
+    Snow.prototype.draw = function() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = '#fff';
+      ctx.fill();
+      ctx.closePath();
+    }
+    
+    Snow.prototype.update = function() {
+      this.y += this.speed;
+      this.x += this.wind;
+    
+      if (this.y > ctx.canvas.height) {
+        this.y = 0;
+        this.x = random(0, width);
+      }
+    }
+    
+    function createSnow(count) {
+      for (var i = 0; i < count; i++) {
+        snowflakes[i] = new Snow();
+      }
+    }
+    
+    function draw() {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      for (var i = 0; i < snowflakes.length; i++) {
+        snowflakes[i].draw();
+      }
+    }
+    
+    function loop() {
+      draw();
+      update();
+      animFrame(loop);
+    }
+    
+    function random(min, max) {
+      var rand = (min + Math.random() * (max - min)).toFixed(1);
+      rand = Math.round(rand);
+      return rand;
+    }
+    
+    createSnow(500);
+    loop();
+  </script>
+
+
+</body>
+
+</html>
