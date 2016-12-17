@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Cantora+One);
+
+    html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(http://georgewexler.neocities.org/George_Project5-02-01.png);
+	background-repeat: no-repeat;
+	
+	background-origin: content-box;
+	background-position: center 50%;
+	background-size: cover;
+    }
+    a{
+	color: #F95E61;
+	text-decoration: none;
+    }
+    .container{
+    	position: relative;
+    }
+    .container > header{
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	text-align: center;
+	padding-bottom: 15%;
+    }
+    .container > header h1{
+	font-family:'Cantora One', sans-serif;
+	font-size: 6em;
+	position: relative;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 4px 0px 1px rgba(249,94,97,1.00);
+    }
+    
+    .container > header h2{
+    	font-size: 2em;
+    	color: #f8f8f8;
+    	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    }
+    
+    #current {
+	background-color: rgba(228,77,80,0.51);
+}
+    body {
+    	margin: 0;
+    	width: 100%;
+    	height: 100%;
+    	overflow-y: scroll;
+    	overflow-x: hidden;
+    	background-color: rgba(75,78,77,1.00);
+    }
+    
+    .footer {
+	text-align: center;
+	color: rgba(255,255,255,0.80);
+	width: 100%;
+	padding-top: 5%;
+	font-size: 5em;
+}
+    
+    		
+    @media screen and (max-width:700px){
+     html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(http://georgewexler.neocities.org/George_Project5-02-01.png);
+	background-repeat: no-repeat;
+	background-position: 100% top;
+	background-origin: content-box;
+	background-position: right;
+	background-position: left 0%;
+    }
+    }
+    ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    }
+    ul.topnav li {
+	float: left;
+    	@keyframes shake {
+        10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+; 	width: 0%;
+	width: 0%;
+	width: 0%;
+	width: 0%;
+	width: 0%;
+}
+}
+    
+ ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.topnav li {
+	float: left;
+	width: 20%;
+}
+
+ul.topnav li a {
+	display: inline-block;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	background-color: rgba(46,46,46,0.87);
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:700px) {
+	 html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(http://georgewexler.neocities.org/George_Project5-02-01.png);
+	background-repeat: no-repeat;
+	background-position: 100% top;
+	background-origin: content-box;
+	background-position: left center;
+	background-size: 300% 100%;
+    }
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+.nav-icon {
+	display: inline-block;
+  margin: 0px 20px;
+  
+  color: white;
+  font-family: 'Cantora', serif;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 2px;
+ 
+}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+
+  }
+  ul.topnav.responsive li a {
+	display: block;
+    text-align: left;
+  }
+  #current { 
+  	width:100%;
+	  
+	  
+  
+}
+
+.nav-icon:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+}
+@media screen and (min-width:701px) and (max-width:1024px){
+	 .oyy {
+	width: 7%;
+	padding-right: 2%;
+	padding-left: 1%;
+	height: 5%;}
+	 html,body {
+	margin: 0;
+	padding: 0;
+	background-image: url(http://georgewexler.neocities.org/George_Project5-02-01.png);
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	background-origin: content-box;
+	background-position: right center;
+	background-size: 300% 100%;
+    }
+	.nav-icon {
+  display: inline-block;
+  margin: 0px 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-style: solid;
+  background: transparent;
+  color: white;
+  font-family: Garamond, serif;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+}
+  
+@media screen and (min-width:1025px){
+	.nav-icon {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 0px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border-style: solid;
+	background: transparent;
+	color: white;
+	font-family: Garamond, serif;
+	line-height: 200px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	font-size: 3em;
+}
+#myTopnav li .nav-icon {
+	font-size: 3em;
+}
+.oyy {
+	width: 5%;
+}
+
+}

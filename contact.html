@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>George Wexler | Home</title>
+  <title>George Wexler | Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Web Designer | 3D Modeler | Graphic Artist |
 Multimedia Student">
@@ -20,12 +20,109 @@ Multimedia Student">
   <link rel="shortcut icon" href="images/favicon-01.png">
   <link href="css/styles1.css" rel="stylesheet" type="text/css">
 
-  <style> 
-   
-      
-   
+  <style>
+    section {
+    	width: 100%;
+    	display: table;
+    	margin: 2%;
+    	background-color: rgba(49,107,179,0.84);
+    	height: 15vh;
+    	padding-bottom: 25px;
+    }
     
-       .snow {
+    .content {
+    	display: table-cell;
+    	vertical-align: middle;
+    	padding-left: 10%;
+    	padding-right: 10%;
+    	padding-top: 10%;
+    	padding-bottom: 5%;
+    	font-size: 2em;
+    }  
+    
+    .circle-shape-example { 
+      font-family:'Cantora One', sans-serif; 
+      margin: 2rem; 
+    }
+    .circle-shape-example p { 
+      line-height: 1.8; 
+    }
+    .circle-shape-example .curve {
+    	width: 3%;
+    	height: auto;
+    	min-width: 150px;
+    	float: left;
+    	margin-right: 2rem;
+    	border-radius: 50%;
+    	-webkit-shape-outside: circle();
+    	shape-outside: circle();
+    	border: 10px outset rgba(49,107,179,1.00);
+    }
+    
+    
+    .color-list {
+    	display: flex;
+    	
+    	flex-direction: column;
+    	height: 20vh;
+    }
+    
+    .color {
+     
+      display: flex;
+      flex-direction: column;
+      
+     
+      flex: 1 0 2em;  
+      box-shadow: 0 0 30px #424242;
+      
+      
+      overflow: hidden;
+      padding: 1em;
+      color: white;
+      transition: flex-basis 500ms ease-in-out;
+    }
+    
+    .color:hover {
+      
+      flex-basis: 20em;
+    }
+    
+    .color:hover .details {
+      opacity: 1;
+    }
+    
+    .name {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    
+    .details {
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    	opacity: 0;
+    	transition: opacity 500ms ease-in-out;
+    	height: 5em;
+    }
+    
+    .details li {
+    	font-size: 1em;
+    	line-height: 0.5em;
+    }
+    
+    @media (min-width: 600px) {
+      .color-list {
+       
+        flex-direction: row;
+      }
+      
+      .color {
+       
+        flex-shrink: 1;
+      }
+    }
+    .snow {
     	height: 100%;
     	position: absolute;
     	width: 100%;
@@ -65,11 +162,11 @@ Multimedia Student">
       <h1>George Wexler</h1>
       <h2> Web Designer | 3D Modeler | Graphic Artist<br>Multimedia Student</h2>
       <ul class="topnav" id="myTopnav">
-        <li><a class="nav-icon"id="current" href="index.html">Home</a></li>
-        <li><a class="nav-icon"   href="about.html">About</a></li>
+        <li><a class="nav-icon" href="index.html">Home</a></li>
+         <li><a class="nav-icon"  href="about.html">About</a></li>
         <li><a class="nav-icon" href="GW_Resume.pdf">Resume</a></li>
         <li><a class="nav-icon" href="gallery.html">Gallery</a></li>
-        <li><a class="nav-icon" href="contact.html">Contact</a></li>
+        <li><a class="nav-icon" id="current" href="contact.html">Contact</a></li>
         <li class="icon">
           <a href="javascript:void(0);" style="font-size:2em;" onclick="myFunction()">…</a>
         </li>
@@ -78,9 +175,41 @@ Multimedia Student">
 
 
     </header>
-  
+    <section>
+      <div class="content">
+        <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+          <img src="images/profilepic.png" alt="profile pic" class="curve">
+          <h1>Contact Me!</h1>
+
+          <div>Feel free to contact me or check out my work using the links below!
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="https://i.imgsafe.org/77d6835a4c.png" alt="profile pic" class="curve">
+    <h1>Codepen</h1>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="images/gmail-icon.png" alt="profile pic" class="curve">
+    <h1>Gmail</h1>
+    </section>
+    <section>
+    <div class="content">
+    <div class="circle-shape-example" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+    <img src="images/Twitterbird.png" alt="profile pic" class="curve">
+    <h1>Twitter</h1>
+    </section>
+        
+        
+
 
      
+
 
     <script>
       function myFunction() {
